@@ -1,0 +1,10 @@
+package com.example.myapplication.Controller;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface RestSandwichApi {
+
+    @GET("sandwich.json")
+    Call<RestSandwichResponse> getAllSandwich();
+}
